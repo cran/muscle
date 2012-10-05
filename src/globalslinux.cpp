@@ -156,7 +156,7 @@ double GetRAMSizeMB()
 			}
 		return DEFAULT_RAM;
 		}
-	int Bytes = atoi(pMem+9)*1000;
+	long long Bytes = atoi(pMem+9)*1000;
 	return ((double) Bytes)/1e6;
 	}
 

@@ -1,8 +1,9 @@
-6023c13984964fbaecace64bc4606de6 *DESCRIPTION
+ab0fce88349eba037280167ad2eab54c *DESCRIPTION
 45c295da94fea7cf585755e86a417cfe *NAMESPACE
-75527e3048ee85f709672c436438bed1 *R/muscle_main.R
+3c07e3181b905700aae48e51a6dbd905 *R/muscle_main.R
 82321ad88505df60eb3614c64516a6e3 *data/umax.rda
 d3c78f2bc7683992b0dd7d0f5414a598 *inst/CITATION
+9d724968d9f289b4f854aedc399bb62f *man/XStringSet2fasta.Rd
 03a998ff7493c512d6642670ee1295f3 *man/muscle-package.Rd
 bf83d5c3d268f4d3e8090e8a8e5c6cea *man/muscle.Rd
 e2eae854451fb4c133bc3808a90d3274 *man/print.muscle.Rd
@@ -24,7 +25,7 @@ cf31b3e5a3fd4b90c552ca8a048e34cc *src/blosumla.cpp
 0bae16486d649a5108e2ac986a3eba7c *src/clust.h
 6a5bf76836a8a0a3853b524ea00a37d6 *src/cluster.cpp
 89f1b8a630662233546e5c057d9cb58b *src/cluster.h
-9e414d9dd3048bd5d5a4ee54142edb4b *src/clustset.h
+465bf221a3c7afb8d6ed143c5841bbd5 *src/clustset.h
 42a14241e21eb8d5176916595683e137 *src/clustsetdf.h
 bd7029d31a667da310e631bb5bf190c4 *src/clustsetmsa.h
 d0c3f4820470d2f7f1caeb8ff0e6c58c *src/clwwt.cpp
@@ -80,14 +81,14 @@ a4925303eaae808d65d0dd8f08c90fc7 *src/glbalignsp.cpp
 c9255d942be12085309a4122bd845d52 *src/glbalignss.cpp
 495401a54c5a1979802337dec5bbfccc *src/glbalndimer.cpp
 fad09b5cb5e2bde765297a2794a3db29 *src/globals.cpp
-25fc9feeedba31b7ae80979767b4e88f *src/globalslinux.cpp
+5c3a427a3f819199742fd0b5e5e28b40 *src/globalslinux.cpp
 3be218b4e79253ffd0cb2dbf76e2ff4a *src/globalsosx.cpp
 e866a3ae56be464e837f4c30b775ee49 *src/globalsother.cpp
 99f5f17557fff61c687785a0dd45004c *src/globalswin32.cpp
 1912648ce1e428575f0d86d37ea66d76 *src/gonnet.cpp
 dd586cde76b818129e5781a5186cdc43 *src/gonnet.h
 d41d8cd98f00b204e9800998ecf8427e *src/gotowt.cpp
-cd7e2fc6f8c160d688d2a70ae6ebd765 *src/handle_fasta.cpp
+9620bb886cf522fc3604d7b6488f548e *src/handle_fasta.cpp
 834146cd39d57f87a5acac99fd276020 *src/henikoffweight.cpp
 165748b17689b025ec07128289884670 *src/henikoffweightpb.cpp
 6adc7159ecf68695affe6237c29b2ab3 *src/html.cpp

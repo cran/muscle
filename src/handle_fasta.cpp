@@ -28,8 +28,8 @@ void read_fasta(char **file)
 	ifstream infile;
 	ofstream outfile;
 
-	infile.open(*file, ios::in | ios::binary);
-	outfile.open("temp.rafa", ios::out | ios::binary);
+	infile.open(*file, ios::in );
+	outfile.open("temp.rafa", ios::out );
 
 	if(! infile.is_open()){
 		Rprintf("\nERROR: %s not found!\n",*file); return;
@@ -64,7 +64,7 @@ void write_fasta(char **seqs, char **file, int *num)
 	bool done;
 	ofstream outfile;
 
-	outfile.open(*file, ios::out | ios::binary);
+	outfile.open(*file, ios::out );
 
 	if(! outfile.is_open()){
 		Rprintf("\nERROR: %s not found!\n",*file); return;

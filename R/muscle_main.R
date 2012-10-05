@@ -223,4 +223,21 @@ write.fasta <- function(aln, file)
 	}
 
 
+XStringSet2fasta <- function(stringset, names)
+	{
+	# stringset is a Bioconductor object: DNAStringSet, RNAStringSet, or AAStringSet.
+	# names are the names of each sequence.
+
+	ff<-list()
+	ff$seqs <- data.frame(names = names, seq = as.character(stringset), stringsAsFactors = FALSE)
+	ff$num <- length(names)
+	class(ff) <- "fasta"
+	return(ff)
+	}
+	
+
+
+
+
+
 

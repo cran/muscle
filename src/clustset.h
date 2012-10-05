@@ -1,8 +1,8 @@
 #ifndef ClustSet_h
 #define ClustSet_h
 
-enum JOIN;
-enum LINKAGE;
+//enum JOIN;
+//enum LINKAGE;
 class Clust;
 
 class ClustSet
