@@ -1,4 +1,4 @@
-ab0fce88349eba037280167ad2eab54c *DESCRIPTION
+5f4d0052450de4d54d6cdcd8b28c3a5d *DESCRIPTION
 45c295da94fea7cf585755e86a417cfe *NAMESPACE
 3c07e3181b905700aae48e51a6dbd905 *R/muscle_main.R
 82321ad88505df60eb3614c64516a6e3 *data/umax.rda
@@ -81,7 +81,7 @@ a4925303eaae808d65d0dd8f08c90fc7 *src/glbalignsp.cpp
 c9255d942be12085309a4122bd845d52 *src/glbalignss.cpp
 495401a54c5a1979802337dec5bbfccc *src/glbalndimer.cpp
 fad09b5cb5e2bde765297a2794a3db29 *src/globals.cpp
-5c3a427a3f819199742fd0b5e5e28b40 *src/globalslinux.cpp
+a77b9c330ad67d79b0cbf3c5203cbd4f *src/globalslinux.cpp
 3be218b4e79253ffd0cb2dbf76e2ff4a *src/globalsosx.cpp
 e866a3ae56be464e837f4c30b775ee49 *src/globalsother.cpp
 99f5f17557fff61c687785a0dd45004c *src/globalswin32.cpp

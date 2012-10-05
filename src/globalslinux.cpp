@@ -8,6 +8,10 @@
 #include <stdio.h>
 #include <fcntl.h>
 
+#include <stdint.h>
+#include <stdlib.h>
+
+
 const int ONE_MB = 1000000;
 const int MEM_WARNING_THRESHOLD = 20*ONE_MB;
 
@@ -156,7 +160,10 @@ double GetRAMSizeMB()
 			}
 		return DEFAULT_RAM;
 		}
-	long long Bytes = atoi(pMem+9)*1000;
+
+	pMem = pMem+9;
+	unsigned long Bytes = strtoul(pMem, NULL, 10)*1000;
+
 	return ((double) Bytes)/1e6;
 	}
 
