@@ -1,6 +1,6 @@
 /* Functions to parse FASTA sequence files.
  *
- * Author: Alex T. Kalinka
+ * Author: Alex T. Kalinka (alex.t.kalinka@gmail.com)
  *
  */
 
@@ -42,7 +42,7 @@ void read_fasta(char **file)
 				outfile << line.substr(1,line.length()) << "\t";
 				start = FALSE;
 			}else{
-				outfile << "\n" << line.substr(1,line.length()) << "\t";
+				outfile << endl << line.substr(1,line.length()) << "\t";
 				}
 		}else{
 			outfile << line;
@@ -57,7 +57,7 @@ void read_fasta(char **file)
 	}
 
 
-void write_fasta(char **seqs, char **file, int *num, int *len)
+void write_fasta(char **seqs, char **file, int *num)
 	{
 
 	int i, ind;
@@ -72,16 +72,18 @@ void write_fasta(char **seqs, char **file, int *num, int *len)
 
 	for(i = 0; i < *num; i++){
 		if(i % 2 == 0){
-			outfile << ">" << seqs[i] << "\n";
+			outfile << ">" << seqs[i] << endl;
 		}else{
 			string tseq(seqs[i]);
 			ind = 0;
 			done = FALSE;
 			while(!done){
 				if((ind+59) <= tseq.length()){
-					outfile << tseq.substr(ind,60) << "\n";
+					outfile << tseq.substr(ind, 60) << endl;
+				}else if(ind <= tseq.length()){
+					outfile << tseq.substr(ind) << endl;
+					done = TRUE;
 				}else{
-					outfile << tseq.substr(ind,tseq.length()) << "\n";
 					done = TRUE;
 					}
 				ind = ind + 60;

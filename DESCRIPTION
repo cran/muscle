@@ -1,17 +1,16 @@
 Package: muscle
 Type: Package
 Title: Multiple Sequence Alignment
-Version: 3.8.31-1
+Version: 3.8.31-2
 Date: 2012-10-05
 Author: Algorithm by Robert C. Edgar. R port by Alex T. Kalinka.
 Maintainer: Alex T. Kalinka <alex.t.kalinka@gmail.com>
-Description: MUSCLE performs multiple sequence alignments of nucleotide
-        or amino acid sequences.
+Description: MUSCLE performs multiple sequence alignments of nucleotide or amino acid sequences.
 License: Unlimited
 URL: http://www.drive5.com/muscle/
 LazyLoad: yes
 LazyData: yes
-Packaged: 2013-03-29 12:00:45 UTC; alexk
+Packaged: 2014-05-06 10:51:36 UTC; alexk
 NeedsCompilation: yes
 Repository: CRAN
-Date/Publication: 2013-03-29 15:14:48
+Date/Publication: 2014-05-07 10:45:55

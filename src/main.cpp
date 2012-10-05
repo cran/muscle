@@ -6,6 +6,9 @@
 
 #include "muscle.h"
 #include <stdio.h>
+
+#include "msa.h"
+
 #ifdef	WIN32
 #include <windows.h>	// for SetPriorityClass()
 #include <io.h>			// for isatty()
@@ -35,6 +38,8 @@ void muscleR(int *argc, char **argv)
 	{
 
 	int nargs = *argc;
+
+	MSA::m_uIdCount = 0; // To avoid carry-over variable assignments between runs in R.
 
 #if	WIN32
 // Multi-tasking does not work well in CPU-bound

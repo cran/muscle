@@ -1,6 +1,6 @@
-5f1176b9881b746b8f4050ee117a1ad0 *DESCRIPTION
+6023c13984964fbaecace64bc4606de6 *DESCRIPTION
 45c295da94fea7cf585755e86a417cfe *NAMESPACE
-b65c3883d7756a77119616b5641bc42a *R/muscle_main.R
+75527e3048ee85f709672c436438bed1 *R/muscle_main.R
 82321ad88505df60eb3614c64516a6e3 *data/umax.rda
 d3c78f2bc7683992b0dd7d0f5414a598 *inst/CITATION
 03a998ff7493c512d6642670ee1295f3 *man/muscle-package.Rd
@@ -79,7 +79,7 @@ a4925303eaae808d65d0dd8f08c90fc7 *src/glbalignsp.cpp
 59b6cf9dcb6f6d72cdb88c2b84bb4e90 *src/glbalignspn.cpp
 c9255d942be12085309a4122bd845d52 *src/glbalignss.cpp
 495401a54c5a1979802337dec5bbfccc *src/glbalndimer.cpp
-82800eb71e93b024fac9796a98d76023 *src/globals.cpp
+fad09b5cb5e2bde765297a2794a3db29 *src/globals.cpp
 25fc9feeedba31b7ae80979767b4e88f *src/globalslinux.cpp
 3be218b4e79253ffd0cb2dbf76e2ff4a *src/globalsosx.cpp
 e866a3ae56be464e837f4c30b775ee49 *src/globalsother.cpp
@@ -87,7 +87,7 @@ e866a3ae56be464e837f4c30b775ee49 *src/globalsother.cpp
 1912648ce1e428575f0d86d37ea66d76 *src/gonnet.cpp
 dd586cde76b818129e5781a5186cdc43 *src/gonnet.h
 d41d8cd98f00b204e9800998ecf8427e *src/gotowt.cpp
-698ce441274f737f031d90fdb377ea86 *src/handle_fasta.cpp
+cd7e2fc6f8c160d688d2a70ae6ebd765 *src/handle_fasta.cpp
 834146cd39d57f87a5acac99fd276020 *src/henikoffweight.cpp
 165748b17689b025ec07128289884670 *src/henikoffweightpb.cpp
 6adc7159ecf68695affe6237c29b2ab3 *src/html.cpp
@@ -95,14 +95,14 @@ d41d8cd98f00b204e9800998ecf8427e *src/gotowt.cpp
 720c195991738f7572506f5b38ec6d0f *src/intmath.cpp
 97ca90f7c59db662e979d9af24e0ebea *src/intmath.h
 e8dbbcdd710470260b4d1c2a4dcd3003 *src/local.cpp
-f19ad03cba78b2c74baede385aadbb81 *src/main.cpp
+13666fd608972957418349c4bc5a04ce *src/main.cpp
 d3baea8a5a021b1ab19169962a524a8f *src/makerootmsa.cpp
 08153f198c45f73ff23463aae2d42516 *src/makerootmsab.cpp
 234e7e44828f38d78d44634939d1ecf4 *src/maketree.cpp
 21b3fae8d877a33c515dedf1260e73df *src/mhack.cpp
 2ac270068968bb0e1d53d51916d420f3 *src/mpam200.cpp
 c600dcc98e3f9255f9b0815069e8aeb3 *src/msa.cpp
-90e326fcd8ed33cb6a7825082a5f2cdf *src/msa.h
+ab0d18b518c39269f336adad44d115f7 *src/msa.h
 533d569db43e9d5f0f5706b170b65c01 *src/msa2.cpp
 1546eb737efecf422b5a758e07c26e09 *src/msadist.h
 e79db1b93f44f47be6b299fbd535d441 *src/msadistkimura.cpp
@@ -122,7 +122,7 @@ a208739852ba3bb9c39755a500eecadd *src/objscore.cpp
 36c42d4b872d2b31574603e3eb3c63f5 *src/objscore.h
 0a6a2a3abf6182c6c87a7bdf32a0cdfb *src/objscore2.cpp
 a5716d3d2585eea0a799cfb0f053e223 *src/objscoreda.cpp
-f15477c56a65a26e8c7fbf0cd47576f5 *src/onexception.cpp
+a1792de6aa0f0199e0161552463aeeaf *src/onexception.cpp
 b64f13d39f34a9ceb3dd6e77f978be59 *src/optionsR.cpp
 bb1513b101b42c0740a2cb99fc6e5ba8 *src/outweights.cpp
 bb2e11ec5fd321a28ac60e6f0e30798d *src/pam200mafft.cpp

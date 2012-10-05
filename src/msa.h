@@ -16,6 +16,9 @@ public:
 	virtual ~MSA();
 
 public:
+
+	static unsigned m_uIdCount;
+
 // Ways to create an MSA
 	void FromFile(TextFile &File);
 	void FromFASTAFile(TextFile &File);
@@ -152,7 +155,7 @@ private:
 	char **m_szSeqs;
 	char **m_szNames;
 
-	static unsigned m_uIdCount;
+	//static unsigned m_uIdCount;
 
 	unsigned *m_IdToSeqIndex;
 	unsigned *m_SeqIndexToId;

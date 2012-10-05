@@ -13,5 +13,7 @@ void OnException()
 	Rprintf("%s", szOnExceptionMessage);
 	Log("%s", szOnExceptionMessage);
 	Log("Finished %s\n", GetTimeAsStr());
-	return;
+	error("error in muscle\n");
 	}
+
+

@@ -104,7 +104,7 @@ void Quit(const char szFormat[], ...)
 			Break();
 		}
 #endif
-	return;
+	error("error in muscle\n");
 	}
 
 void Warning(const char szFormat[], ...)

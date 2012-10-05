@@ -103,6 +103,26 @@ print.muscle <- function(x, ...)
 	}
 
 
+.expand.tilde <- function(file)
+	{
+	uu <- unlist(strsplit(file,""))
+	gg <- grep("~",uu)
+	if(length(gg) == 1){ # Need to expand tilde?
+		if(capabilities("cledit")){ # readline available?
+			if(gg == 1){
+				file <- path.expand(file)
+			}else{
+				stop("the tilde character (~) must be the first character in the file path\n")
+				}
+		}else{
+			stop("readline not available: absolute file path required\n i.e. do not use the tilde character (~)\n")
+			}
+	}else if(length(gg) > 1){
+		stop("there must be only one tilde character (~) in the file path\n")
+		}
+	return(file)
+	}
+
 
 muscle <- function(seqs, out = NULL, quiet = FALSE, ...)
 	{
@@ -114,6 +134,10 @@ muscle <- function(seqs, out = NULL, quiet = FALSE, ...)
 	write <- FALSE
 
 	if(is.character(seqs)){
+		seqs <- .expand.tilde(seqs)
+		if(file.access(seqs) == -1){
+			stop(cat("\nfile not found: \"",seqs,"\"\n",sep=""))
+			}
 		arg.v <- append(arg.v,c("in",as.character(seqs)))
 	}else if(class(seqs)=="fasta" || class(seqs)=="muscle"){
 		write.fasta(seqs, file="temp.fa")
@@ -151,7 +175,7 @@ muscle <- function(seqs, out = NULL, quiet = FALSE, ...)
 
 	if(is.null(out)){
 		.C("read_fasta", file = as.character("temp.afa"))
-		aln <- read.table("temp.rafa", header = FALSE, stringsAsFactors = FALSE)
+		aln <- read.table("temp.rafa", sep = "\t", header = FALSE, stringsAsFactors = FALSE)
 		file.remove("temp.afa","temp.rafa")
 		ret <- list()
 		ret$seqs <- aln
@@ -163,14 +187,14 @@ muscle <- function(seqs, out = NULL, quiet = FALSE, ...)
 		return(invisible())
 		}
 
-
 	}
 
 
 read.fasta <- function(file)
 	{
+	file <- .expand.tilde(file)
 	.C("read_fasta", file = as.character(file))
-	aln <- read.table("temp.rafa", header = FALSE, stringsAsFactors = FALSE)
+	aln <- read.table("temp.rafa", sep = "\t", header = FALSE, stringsAsFactors = FALSE)
 	file.remove("temp.rafa")
 	ret <- list()
 	ret$seqs <- aln
@@ -186,14 +210,15 @@ write.fasta <- function(aln, file)
 	seqs <- NULL
 	if(class(aln)=="muscle" || class(aln)=="fasta"){
 		num <- nrow(aln$seqs)*2
-		len <- nchar(aln$seqs[1,2])
+		#len <- nchar(aln$seqs[1,2])
 		for(i in 1:(num/2)){
 			seqs <- append(seqs, c(as.character(aln$seqs[i,1]), as.character(aln$seqs[i,2])))
 			}
 	}else{
 		stop("input must be an object of class \'muscle\' or \'fasta\'\n")
 		}
-	out <- .C("write_fasta", as.character(seqs), as.character(file), as.integer(num), as.integer(len))
+	file <- .expand.tilde(file)
+	out <- .C("write_fasta", as.character(seqs), as.character(file), as.integer(num))
 	return(invisible())
 	}
 
