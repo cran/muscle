@@ -1,0 +1,3 @@
+exportPattern(muscle, print.muscle, read.fasta, write.fasta)
+
+useDynLib(muscle)

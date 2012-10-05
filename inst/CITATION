@@ -1,0 +1,14 @@
+citHeader("To cite the 'muscle' package in publications use:")
+     
+citEntry(entry="Article",
+              title = "MUSCLE: multiple sequence alignment with high accuracy and high throughput",
+              author = personList(as.person("Robert C. Edgar")),
+              year = "2004",
+              journal = "Nucleic Acids Res",
+	      volume = "32",
+	      pages = "1792-1797",
+	      doi = "10.1093/nar/gkh340",
+     
+              textVersion = "Edgar, R.C. (2004) MUSCLE: multiple sequence alignment with high accuracy and high throughput. Nucleic Acids Res 32:1792-1797.\n\ndoi:10.1093/nar/gkh340"
+	)
+
