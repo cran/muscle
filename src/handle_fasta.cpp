@@ -49,6 +49,8 @@ void read_fasta(char **file)
 			}
 		}
 
+	outfile << endl;
+
 	infile.close();
 	outfile.close();
 
@@ -87,6 +89,8 @@ void write_fasta(char **seqs, char **file, int *num, int *len)
 			tseq.clear();
 			}
 		}
+	outfile << endl;
+
 	outfile.close();
 
 	}

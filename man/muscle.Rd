@@ -66,7 +66,7 @@ aln <- muscle(seqs = umax)
 
 ## Align sequences from a fasta object and write them to a fasta file.
 \dontrun{
-aln <- muscle(seqs = umax, out = "out.afa")
+muscle(seqs = umax, out = "out.afa")
 }
 
 ## Switch on the diags flag.

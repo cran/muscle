@@ -1,10 +1,10 @@
-d5e515c28736cf71185e180a8e0c4654 *DESCRIPTION
+5f1176b9881b746b8f4050ee117a1ad0 *DESCRIPTION
 45c295da94fea7cf585755e86a417cfe *NAMESPACE
 b65c3883d7756a77119616b5641bc42a *R/muscle_main.R
 82321ad88505df60eb3614c64516a6e3 *data/umax.rda
 d3c78f2bc7683992b0dd7d0f5414a598 *inst/CITATION
 03a998ff7493c512d6642670ee1295f3 *man/muscle-package.Rd
-1920b587df3d2796b45c4f14c5a30f36 *man/muscle.Rd
+bf83d5c3d268f4d3e8090e8a8e5c6cea *man/muscle.Rd
 e2eae854451fb4c133bc3808a90d3274 *man/print.muscle.Rd
 86158277da13703e74ee870450f8ce10 *man/read.fasta.Rd
 5a8289eb61758eeb544f11ad1fa20caa *man/umax.Rd
@@ -82,11 +82,12 @@ c9255d942be12085309a4122bd845d52 *src/glbalignss.cpp
 82800eb71e93b024fac9796a98d76023 *src/globals.cpp
 25fc9feeedba31b7ae80979767b4e88f *src/globalslinux.cpp
 3be218b4e79253ffd0cb2dbf76e2ff4a *src/globalsosx.cpp
+e866a3ae56be464e837f4c30b775ee49 *src/globalsother.cpp
 99f5f17557fff61c687785a0dd45004c *src/globalswin32.cpp
 1912648ce1e428575f0d86d37ea66d76 *src/gonnet.cpp
 dd586cde76b818129e5781a5186cdc43 *src/gonnet.h
 d41d8cd98f00b204e9800998ecf8427e *src/gotowt.cpp
-023bb41c780e0189c52137cf99e8404d *src/handle_fasta.cpp
+698ce441274f737f031d90fdb377ea86 *src/handle_fasta.cpp
 834146cd39d57f87a5acac99fd276020 *src/henikoffweight.cpp
 165748b17689b025ec07128289884670 *src/henikoffweightpb.cpp
 6adc7159ecf68695affe6237c29b2ab3 *src/html.cpp
